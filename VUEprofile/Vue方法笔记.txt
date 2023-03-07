@@ -1,0 +1,16 @@
+deleter() {
+                    const newArray = this.proList.filter(value => {
+                        return value.keywords2 === false //返回 展示keywords为false
+                    })
+                    this.proList = newArray
+                    console.log(newArray)
+                },
+2.
+ const newArray = this.proList.filter(value => {
+                        return value.keywords2 === false
+                    })
+                    if (newArray.length > 0) {
+                        this.Allcheck = false;
+                        return
+                    }
+                    this.Allcheck = true;
